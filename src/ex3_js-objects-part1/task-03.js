@@ -1,9 +1,8 @@
 function checkProperty(propertyName, objectName) {
-  let exists = false;
   if (objectName.hasOwnProperty(propertyName)) {
-    exists = true;
+    return true;
   }
-  return exists;
+  return false;
 }
 
 module.exports = checkProperty;
