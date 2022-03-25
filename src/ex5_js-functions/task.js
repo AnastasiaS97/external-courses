@@ -5,9 +5,9 @@ function Calculator() {
     getResult() {
       return calc;
     },
-    add(num) {
+    add(num = 0) {
       calc += num;
-      function addMore(numNext) {
+      function addMore(numNext = 0) {
         calc += numNext;
 
         return addMore;
@@ -16,9 +16,9 @@ function Calculator() {
 
       return addMore;
     },
-    subtract(num) {
+    subtract(num = 0) {
       calc -= num;
-      function subtractMore(numNext) {
+      function subtractMore(numNext = 0) {
         calc -= numNext;
 
         return subtractMore;
@@ -27,9 +27,9 @@ function Calculator() {
 
       return subtractMore;
     },
-    divide(num) {
+    divide(num = 1) {
       calc /= num;
-      function divideMore(numNext) {
+      function divideMore(numNext = 1) {
         calc /= numNext;
 
         return divideMore;
@@ -38,9 +38,9 @@ function Calculator() {
 
       return divideMore;
     },
-    multiply(num) {
+    multiply(num = 1) {
       calc *= num;
-      function multiplyMore(numNext) {
+      function multiplyMore(numNext = 1) {
         calc *= numNext;
 
         return multiplyMore;
