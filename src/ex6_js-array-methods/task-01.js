@@ -1,9 +1,9 @@
 function notSlice(arrIn, start = 0, end = arrIn.length) {
-  const arrOut = [];
   const endReverse = arrIn.length + end;
   let startReverse = arrIn.length + start;
   let reverse;
   let endReal = end;
+  let arrOut = [];
   if (Math.abs(startReverse) >= arrIn.length) {
     startReverse = 0;
   }
@@ -19,30 +19,22 @@ function notSlice(arrIn, start = 0, end = arrIn.length) {
   }
   switch (reverse) {
     case 1:
-      for (let indexIn = startReverse, indexOut = 0;
-        indexIn < endReverse;
-        indexIn += 1, indexOut += 1) {
-        arrOut[indexOut] = arrIn[indexIn];
+      for (let index = startReverse; index < endReverse; index += 1) {
+        arrOut = [...arrOut, arrIn[index]];
       }
       break;
     case 2:
-      for (let indexIn = startReverse, indexOut = 0;
-        indexIn < end;
-        indexIn += 1, indexOut += 1) {
-        arrOut[indexOut] = arrIn[indexIn];
+      for (let index = startReverse; index < end; index += 1) {
+        arrOut = [...arrOut, arrIn[index]];
       }
       break;
     case 3:
-      for (let indexIn = start, indexOut = 0;
-        indexIn < endReverse;
-        indexIn += 1, indexOut += 1) {
-        arrOut[indexOut] = arrIn[indexIn];
+      for (let index = start; index < endReverse; index += 1) {
+        arrOut = [...arrOut, arrIn[index]];
       }
       break;
-    default: for (let indexIn = start, indexOut = 0;
-      indexIn < endReal;
-      indexIn += 1, indexOut += 1) {
-      arrOut[indexOut] = arrIn[indexIn];
+    default: for (let index = start; index < endReal; index += 1) {
+      arrOut = [...arrOut, arrIn[index]];
     }
   }
 
