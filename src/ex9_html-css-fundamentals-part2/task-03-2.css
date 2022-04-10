@@ -1,0 +1,15 @@
+#header {
+  height: 25px;
+  font-size: 0.7em;
+  color: #818f9f;
+  text-transform: uppercase;
+}
+
+.table-row {
+  font-size: 0.9em;
+  color: #6a7685;
+}
+
+.name {
+  text-transform: capitalize;
+}
