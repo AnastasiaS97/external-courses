@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="task-02.css" />
+    <title>Task 02</title>
+  </head>
+  <body>
+    <h2>GET method</h2>
+    <form action="http://httpbin.org/get" method="get">
+      <fieldset>
+        <legend>Personal data</legend>
+        <div class="wrapper-content">
+          <div>
+            <label>Surname <input type="text" name="surname" required /></label>
+          </div>
+          <div>
+            <label
+              >First Name <input type="text" name="firstname" required
+            /></label>
+          </div>
+          <div>
+            <label>Middle name <input type="text" name="middlename" /></label>
+          </div>
+          <div class="user-sex">
+            <label
+              >You are
+              <label><input type="radio" name="sex" value="male" />male</label>
+              <label
+                ><input type="radio" name="sex" value="female" />female</label
+              >
+            </label>
+          </div>
+          <div>
+            <label
+              >Age <input type="number" min="18" max="101" name="age" required
+            /></label>
+          </div>
+          <div>
+            <label
+              >Country of Residence
+              <select name="country">
+                <option></option>
+                <option>Russia</option>
+                <option>USA</option>
+                <option>UK</option>
+                <option>Other</option>
+              </select>
+            </label>
+          </div>
+          <div>
+            <label
+              >City
+              <label
+                ><input
+                  type="checkbox"
+                  name="city"
+                  value="Ryazan"
+                />Ryazan</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  name="city"
+                  value="Moscow"
+                />Moscow</label
+              >
+            </label>
+          </div>
+          <div>
+            <label
+              >Photography
+              <input type="file" name="photo" accept="image/png, image/jpg" />
+            </label>
+          </div>
+          <div>
+            <hr />
+            <label
+              >Title
+              <select size="8" name="title" required>
+                <optgroup label="Technologies">
+                  <option>Web Master</option>
+                  <option>Database Administrator</option>
+                  <option>Computer-aided design</option>
+                </optgroup>
+                <optgroup label="Finance">
+                  <option>Economic planning</option>
+                  <option>Management accounting</option>
+                  <option>Budgeting and planning</option>
+                </optgroup>
+              </select>
+            </label>
+          </div>
+          <div>
+            <label
+              >Salary
+              <input
+                type="range"
+                name="salary"
+                min="20000"
+                max="150000"
+                step="5000"
+            /></label>
+          </div>
+          <div>
+            <textarea
+              placeholder="Tell us about yourself..."
+              name="info"
+            ></textarea>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Contact information</legend>
+        <div class="wrapper-contacts">
+          <label>Site <input type="url" name="site" /></label>
+          <label>Email <input type="email" name="email" required /></label>
+          <label>Phone <input type="tel" name="phone" /></label>
+        </div>
+      </fieldset>
+      <label
+        >Password <input type="password" name="password" minlength="8" required
+      /></label>
+      <div class="wrapper-submit">
+        <input type="submit" value="Отправить" />
+        <input type="reset" value="Сбросить" />
+      </div>
+    </form>
+    <br />
+    <h2>POST method</h2>
+    <form action="http://httpbin.org/post" method="post">
+      <fieldset>
+        <legend>Personal data</legend>
+        <div class="wrapper-content">
+          <div>
+            <label>Surname <input type="text" name="surname" required /></label>
+          </div>
+          <div>
+            <label
+              >First Name <input type="text" name="firstname" required
+            /></label>
+          </div>
+          <div>
+            <label>Middle name <input type="text" name="middlename" /></label>
+          </div>
+          <div class="user-sex">
+            <label
+              >You are
+              <label><input type="radio" name="sex" value="male" />male</label>
+              <label
+                ><input type="radio" name="sex" value="female" />female</label
+              >
+            </label>
+          </div>
+          <div>
+            <label
+              >Age <input type="number" min="18" max="101" name="age" required
+            /></label>
+          </div>
+          <div>
+            <label
+              >Country of Residence
+              <select name="country">
+                <option></option>
+                <option>Russia</option>
+                <option>USA</option>
+                <option>UK</option>
+                <option>Other</option>
+              </select>
+            </label>
+          </div>
+          <div>
+            <label
+              >City
+              <label
+                ><input
+                  type="checkbox"
+                  name="city"
+                  value="Ryazan"
+                />Ryazan</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  name="city"
+                  value="Moscow"
+                />Moscow</label
+              >
+            </label>
+          </div>
+          <div>
+            <label
+              >Photography
+              <input type="file" name="photo" accept="image/png, image/jpg" />
+            </label>
+          </div>
+          <div>
+            <hr />
+            <label
+              >Title
+              <select size="8" name="title" required>
+                <optgroup label="Technologies">
+                  <option>Web Master</option>
+                  <option>Database Administrator</option>
+                  <option>Computer-aided design</option>
+                </optgroup>
+                <optgroup label="Finance">
+                  <option>Economic planning</option>
+                  <option>Management accounting</option>
+                  <option>Budgeting and planning</option>
+                </optgroup>
+              </select>
+            </label>
+          </div>
+          <div>
+            <label
+              >Salary
+              <input
+                type="range"
+                name="salary"
+                min="20000"
+                max="150000"
+                step="5000"
+            /></label>
+          </div>
+          <div>
+            <textarea
+              placeholder="Tell us about yourself..."
+              name="info"
+            ></textarea>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Contact information</legend>
+        <div class="wrapper-contacts">
+          <label>Site <input type="url" name="site" /></label>
+          <label>Email <input type="email" name="email" required /></label>
+          <label>Phone <input type="tel" name="phone" /></label>
+        </div>
+      </fieldset>
+      <label
+        >Password <input type="password" name="password" minlength="8" required
+      /></label>
+      <div class="wrapper-submit">
+        <input type="submit" value="Отправить" />
+        <input type="reset" value="Сбросить" />
+      </div>
+    </form>
+  </body>
+</html>
