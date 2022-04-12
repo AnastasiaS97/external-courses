@@ -1,0 +1,69 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper-content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+div {
+  padding-bottom: 10px;
+}
+
+div:last-child {
+  padding-bottom: 0;
+}
+
+input {
+  width: 150px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: 15px;
+}
+
+input[type="number"] {
+  width: 50px;
+}
+
+input[type="file"] {
+  width: 200px;
+}
+
+hr {
+  margin-bottom: 15px;
+}
+
+textarea {
+  width: 350px;
+  height: 150px;
+}
+
+.wrapper-contacts {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+input[type="url"],
+input[type="email"],
+input[type="tel"] {
+  margin-bottom: 10px;
+}
+
+input[type="password"] {
+  margin: 15px 0;
+}
+
+.wrapper-submit {
+  display: flex;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  width: 90px;
+  margin-right: 5px;
+}
