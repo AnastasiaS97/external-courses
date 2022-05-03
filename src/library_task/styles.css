@@ -1,0 +1,135 @@
+* {
+    margin: auto;
+}
+  
+html {
+    height: 100%;
+}
+  
+body {
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background-color: #eef1f7;
+}
+  
+@font-face {
+    font-family: "proximanova-regular";
+    src: url("/src/library_task/assets/fonts/Proxima\ Nova\ Regular.otf")
+      format("opentype");
+}
+  
+@font-face {
+    font-family: "fontawesome";
+    src: url("/src/library_task/assets/fonts/FontAwesome.otf") format("opentype");
+}
+  
+.fa-solid {
+    color: #ffffff;
+    font-size: 0.9em;
+}
+  
+header {
+    width: 100%;
+    height: 45px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    display: grid;
+    grid-template-columns: 7fr 1fr;
+    background-color: #2f364a;
+}
+  
+.header-nav-wrp {
+    margin-right: 0;
+}
+  
+.header-nav {
+    width: 173px;
+    height: 45px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+ul {
+    list-style: none;
+}
+  
+.header-link {
+    font-family: proximanova-regular;
+    text-decoration: none;
+    color: #78829d;
+    font-size: 13px;
+}
+  
+.header-link:hover {
+    color: #ffffff;
+}
+  
+.list-decoration {
+    margin: 0 10px;
+}
+  
+.header-profile {
+    width: 139px;
+    height: 45px;
+    margin-right: 0;
+    padding: 0 10px;
+    background-color: #15a4fa;
+    border-top-right-radius: 7px;
+    font-family: proximanova-regular;
+    font-size: 13px;
+    color: #ffffff;
+    cursor: default;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+  
+.profile-avatar {
+    width: 29px;
+    height: 29px;
+    margin-left: 2px;
+    margin-right: 0;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+}
+  
+.profile-name {
+    margin-right: 5px;
+}
+  
+.profile-menu {
+    cursor: pointer;
+}
+  
+footer {
+    width: 100%;
+    height: 45px;
+    background-color: #181e2c;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: grid;
+    grid-template-columns: 13fr 1fr;
+}
+  
+.footer-help,
+  .footer-settings {
+    width: 55px;
+    height: 45px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+  
+.footer-help {
+    background-color: #1f2638;
+    grid-column: 10 / span 1;
+}
+  
+.footer-settings {
+    background-color: #16a4fa;
+    border-bottom-right-radius: 5px;
+    grid-column: 12 / span 1;
+}
