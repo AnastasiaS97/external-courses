@@ -323,8 +323,7 @@ h1 {
 .content-book {
   width: 200px;
   height: 320px;
-  margin-top: 28px;
-  margin-bottom: 30px;
+  margin: 28px 5px 30px 10px;
 }
 
 .book-cover {
