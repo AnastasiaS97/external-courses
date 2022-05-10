@@ -36,8 +36,101 @@
         <i class="profile-menu fa-solid fa-circle-chevron-down"></i>
       </div>
     </header>
-    <nav></nav>
-    <main></main>
+    <nav>
+      <div class="nav-add-book">
+        <div class="nav-add-btn">
+          <i class="fa-solid fa-plus"></i>
+          <span class="add-btn-text">add a book</span>
+        </div>
+      </div>
+      <hr class="nav-divider" />
+      <div class="nav-features">
+        <ul class="nav-features-list">
+          <li class="nav-feature-name">
+            <i class="fa-solid fa-book" style="color: #78829d"></i
+            ><a class="feature-link" href="#">Now Reading</a>
+          </li>
+          <li class="nav-feature-name">
+            <i class="fa-solid fa-earth-americas" style="color: #78829d"></i
+            ><a class="feature-link" href="#">Browse</a>
+          </li>
+          <li class="nav-feature-name">
+            <i class="fa-solid fa-cart-shopping" style="color: #78829d"></i
+            ><a class="feature-link" href="#">Buy Books</a>
+          </li>
+          <li class="nav-feature-name">
+            <i class="fa-solid fa-star" style="color: #78829d"></i
+            ><a class="feature-link" href="#">Favourite Books</a>
+          </li>
+          <li class="nav-feature-name">
+            <i class="fa-solid fa-list" style="color: #78829d"></i
+            ><a class="feature-link" href="#">Wishlist</a>
+          </li>
+          <li class="nav-feature-name">
+            <i class="fa-regular fa-clock" style="color: #78829d""></i
+            ><a class="feature-link" href="#">History</a>
+          </li>
+        </ul>
+      </div>
+      <hr class="nav-divider" />
+      <div class="nav-filters">
+        <ul class="nav-filters-list">
+          <li class="nav-filter-name">
+            <i
+              class="fa-solid fa-circle"
+              style="font-size: 7px; color: #e64c66"
+            ></i
+            ><a class="filter-link" href="#">Must Read Titles</a>
+          </li>
+          <li class="nav-filter-name">
+            <i
+              class="fa-solid fa-circle"
+              style="font-size: 7px; color: #ffab00"
+            ></i
+            ><a class="filter-link" href="#">Best Of List</a>
+          </li>
+          <li class="nav-filter-name">
+            <i
+              class="fa-solid fa-circle"
+              style="font-size: 7px; color: #00bfdd"
+            ></i
+            ><a class="filter-link" href="#">Classic Novels</a>
+          </li>
+          <li class="nav-filter-name">
+            <i
+              class="fa-solid fa-circle"
+              style="font-size: 7px; color: #7874cf"
+            ></i
+            ><a class="filter-link" href="#">Non Fiction</a>
+          </li>
+        </ul>
+      </div>
+      <hr class="nav-divider" />
+      <div class="nav-log"></div>
+    </nav>
+    <main>
+      <div class="main-title">
+        <h1>Browse Available Books</h1>
+      </div>
+      <hr style="background-color: #dadfea; height: 2px; border: none" />
+      <div class="main-search">
+        <ul class="main-search-list">
+          <li class="search-name"><a class="search-link" href="#">All Books</a></li>
+          <li class="search-name"><a class="search-link" href="#">Most Recent</a></li>
+          <li class="search-name"><a class="search-link" href="#">Most Popular</a></li>
+          <li class="search-name"><a class="search-link" href="#">Free Books</a></li>
+        </ul>
+        <div class="main-search-bar">
+          <input type="search" class="search-bar" placeholder="Enter Keywords">
+          <i class="fa-solid fa-magnifying-glass" style="color:#949EB7; cursor: pointer"></i>
+        </div>
+      </div>
+      <hr style="background-color: #dadfea; height: 2px; border: none" />
+      <div class="main-content-wrp">
+        <div class="main-content">
+        </div>
+      </div>
+    </main>
     <footer>
       <div class="footer-help">
         <i class="fa-solid fa-circle-question"></i>
@@ -46,5 +139,7 @@
         <i class="fa-solid fa-gear"></i>
       </div>
     </footer>
+    <script type="module" src="script.js"></script>
+    <script type="module" src='./data/books.js'></script>
   </body>
 </html>
