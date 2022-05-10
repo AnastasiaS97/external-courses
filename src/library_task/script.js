@@ -124,6 +124,34 @@ closeModal.onclick = () => {
   modalForm.reset();
 };
 
+const searchBtn = document.querySelector('.search-btn');
+
+const searchByKeyword = () => {
+  let input = document.getElementById('search-bar').value;
+  const booksToSearch = document.getElementsByClassName('content-book');
+  if (input.length === 0) {
+    for (let index = 0; index < booksToSearch.length; index += 1) {
+      booksToSearch[index].style.display = '';
+    }
+  }
+  if (input.length > 0) {
+    input = input.toLowerCase();
+    for (let index = 0; index < booksToSearch.length; index += 1) {
+      if (!booksToSearch[index].innerHTML.toLowerCase().includes(input)) {
+        booksToSearch[index].style.display = 'none';
+      } else {
+        booksToSearch[index].style.display = '';
+      }
+    }
+  }
+
+  return 0;
+};
+
+searchBtn.onclick = () => {
+  searchByKeyword();
+};
+
 document.addEventListener('DOMContentLoaded', () => {
   showBooks();
 });
