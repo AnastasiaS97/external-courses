@@ -1,0 +1,76 @@
+.div-method-1 {
+  width: 97%;
+  height: 400px;
+  background-color: rgb(60, 179, 113);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3em;
+}
+
+.div-method-1::before,
+.div-method-1::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.div-method-1::before {
+  background-color: rgb(157, 223, 186);
+  top: 40px;
+  left: 40px;
+}
+
+.div-method-1::after {
+  background-color: rgb(108, 204, 151);
+  top: 20px;
+  left: 20px;
+}
+
+.div-method-2 {
+  width: 97%;
+  height: 400px;
+  top: 100px;
+  background-color: rgb(60, 179, 113);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3em;
+  box-shadow: 20px 20px 0 rgb(108, 204, 151), 40px 40px 0 rgb(157, 223, 186);
+}
+
+.div-1-method-3 {
+  width: 97%;
+  height: 400px;
+  top: 200px;
+  background-color: rgb(60, 179, 113);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3em;
+}
+
+.div-2-method-3 {
+  width: 97%;
+  height: 400px;
+  top: -180px;
+  left: 20px;
+  position: relative;
+  background-color: rgb(108, 204, 151);
+  z-index: -1;
+}
+
+.div-3-method-3 {
+  width: 97%;
+  height: 400px;
+  top: -560px;
+  left: 40px;
+  position: relative;
+  background-color: rgb(157, 223, 186);
+  z-index: -2;
+}

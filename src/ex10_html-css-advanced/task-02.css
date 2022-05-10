@@ -1,0 +1,44 @@
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+  position: relative;
+  width: 400px;
+}
+
+input {
+  position: absolute;
+  z-index: 999;
+  font-size: 2em;
+  outline: none;
+}
+
+label {
+  position: absolute;
+  top: 0;
+  transition: all 0.5s;
+  color: #b8b5b5;
+  font-weight: 700;
+}
+
+input::placeholder {
+  color: #b8b5b5;
+}
+
+input:invalid + label {
+  opacity: 0;
+}
+
+input:valid + label {
+  top: -20px;
+  opacity: 1;
+}
+
+input:focus + label {
+  color: #0379ff;
+}
