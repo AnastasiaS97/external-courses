@@ -1,12 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My library</title>
-</head>
-<body>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/16f87ac73a.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>My library</title>
+  </head>
+  <body>
+    <div class="add-book-modal" id="add-book-modal">
+      <div class="modal-content-wrp">
+        <div class="modal-title-wrp">
+          <h2 class="modal-title">Add a Book</h2>
+          <span class="modal-close-btn fa-solid fa-xmark" id="add-book-close"></span>
+        </div>
+        <form class="modal-content" id="add-modal" method="get">
+          <input type="text" class="modal-input" id="add-title" placeholder="Title" required>
+          <input type="text" class="modal-input" id="add-author" placeholder="Author" required>
+          <div id="drop-area" class="modal-drop">
+            <span>Drag and drop the cover image here</span>
+          </div>
+          <input type="submit" class="modal-submit-btn" id="submit-btn" form="add-modal" value="Add" onsubmit="submitForm()">
+        </form>
+      </div>
+    </div>
+    <header>
+      <div class="header-nav-wrp">
+        <ul class="header-nav">
+          <li><a class="header-link" href="#">Help Center</a></li>
+          <li>
+            <img
+              class="list-decoration"
+              src="assets/design/small-circle.png"
+              alt="dot"
+            />
+          </li>
+          <li><a class="header-link" href="#">Our Support</a></li>
+        </ul>
+      </div>
+      <div class="header-profile">
+        <img
+          class="profile-avatar"
+          src="assets/design/avatar-01.png"
+          alt="user avatar"
+        />
+        <p class="profile-name">John Doe</p>
+        <i class="profile-menu fa-solid fa-circle-chevron-down"></i>
+      </div>
+    </header>
+    <nav>
+      <div class="nav-add-book">
+        <div class="nav-add-btn" id="add-book-btn">
+          <i class="fa-solid fa-plus"></i>
+          <span class="add-btn-text">add a book</span>
+        </div>
+      </div>
+      <hr class="nav-divider" />
+      <div class="nav-features">
+        <ul class="nav-features-list">
+          <li class="nav-feature-name">
+            <i class="fa-solid fa-book" style="color: #78829d"></i
+            ><a class="feature-link" href="#">Now Reading</a>
+          </li>
+          <li class="nav-feature-name">
+            <i class="fa-solid fa-earth-americas" style="color: #78829d"></i
+            ><a class="feature-link" href="#">Browse</a>
+          </li>
+          <li class="nav-feature-name">
+            <i class="fa-solid fa-cart-shopping" style="color: #78829d"></i
+            ><a class="feature-link" href="#">Buy Books</a>
+          </li>
+          <li class="nav-feature-name">
+            <i class="fa-solid fa-star" style="color: #78829d"></i
+            ><a class="feature-link" href="#">Favourite Books</a>
+          </li>
+          <li class="nav-feature-name">
+            <i class="fa-solid fa-list" style="color: #78829d"></i
+            ><a class="feature-link" href="#">Wishlist</a>
+          </li>
+          <li class="nav-feature-name">
+            <i class="fa-regular fa-clock" style="color: #78829d""></i
+            ><a class="feature-link" href="#">History</a>
+          </li>
+        </ul>
+      </div>
+      <hr class="nav-divider" />
+      <div class="nav-filters">
+        <ul class="nav-filters-list">
+          <li class="nav-filter-name">
+            <i
+              class="fa-solid fa-circle"
+              style="font-size: 7px; color: #e64c66"
+            ></i
+            ><a class="filter-link" href="#">Must Read Titles</a>
+          </li>
+          <li class="nav-filter-name">
+            <i
+              class="fa-solid fa-circle"
+              style="font-size: 7px; color: #ffab00"
+            ></i
+            ><a class="filter-link" href="#">Best Of List</a>
+          </li>
+          <li class="nav-filter-name">
+            <i
+              class="fa-solid fa-circle"
+              style="font-size: 7px; color: #00bfdd"
+            ></i
+            ><a class="filter-link" href="#">Classic Novels</a>
+          </li>
+          <li class="nav-filter-name">
+            <i
+              class="fa-solid fa-circle"
+              style="font-size: 7px; color: #7874cf"
+            ></i
+            ><a class="filter-link" href="#">Non Fiction</a>
+          </li>
+        </ul>
+      </div>
+      <hr class="nav-divider" />
+      <div class="nav-log"></div>
+    </nav>
+    <main>
+      <div class="main-title">
+        <h1>Browse Available Books</h1>
+      </div>
+      <hr style="background-color: #dadfea; height: 2px; border: none" />
+      <div class="main-search">
+        <ul class="main-search-list">
+          <li class="search-name"><a class="search-link" href="#">All Books</a></li>
+          <li class="search-name"><a class="search-link" href="#">Most Recent</a></li>
+          <li class="search-name"><a class="search-link" href="#">Most Popular</a></li>
+          <li class="search-name"><a class="search-link" href="#">Free Books</a></li>
+        </ul>
+        <div class="main-search-bar">
+          <input type="search" class="search-bar" placeholder="Enter Keywords">
+          <i class="fa-solid fa-magnifying-glass" style="color:#949EB7; cursor: pointer"></i>
+        </div>
+      </div>
+      <hr style="background-color: #dadfea; height: 2px; border: none" />
+      <div class="main-content-wrp">
+        <div class="main-content">
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-help">
+        <i class="fa-solid fa-circle-question"></i>
+      </div>
+      <div class="footer-settings">
+        <i class="fa-solid fa-gear"></i>
+      </div>
+    </footer>
+  <script type="module" src="script.js"></script>
+  <script type="module" src='./assets/data/books.js'></script>
+  <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+  </body>
 </html>
