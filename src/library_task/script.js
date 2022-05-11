@@ -151,6 +151,47 @@ searchBtn.onclick = () => {
   searchByKeyword();
 };
 
+const starBooks = document.getElementsByClassName('book-cover');
+const booksChange = document.getElementsByClassName('content-book');
+const starChangeTo = document.getElementById('star-change');
+const starButton = document.getElementById('star-button');
+
+const starRating = () => {
+  for (let index = 0; index < starBooks.length; index += 1) {
+    starBooks[index].onclick = () => {
+      console.log(booksChange[index].querySelector('h2').innerHTML);
+      document.getElementById('star-change-book').innerHTML = booksChange[index].querySelector('h2').innerHTML;
+      document.getElementById('star-modal').style.display = 'block';
+      starChangeTo.onclick = () => {
+        document.getElementById('star-change-step').innerHTML = starChangeTo.value;
+      };
+      starChangeTo.value = books[index].rating;
+      document.getElementById('star-change-step').innerHTML = starChangeTo.value;
+      starButton.onclick = () => {
+        books[index].rating = starChangeTo.value;
+        const stars = booksChange[index].getElementsByClassName('fa-star');
+        for (let indexAll = 1; indexAll <= 5; indexAll += 1) {
+          stars[indexAll - 1].classList.replace('fa-solid', 'fa-regular');
+        }
+        for (let indexNew = 1; indexNew <= starChangeTo.value; indexNew += 1) {
+          stars[indexNew - 1].classList.add('fa-solid');
+        }
+        document.getElementById('star-change-step').innerHTML = '';
+        document.getElementById('star-modal').style.display = 'none';
+      };
+    };
+  }
+};
+
+const closeStarModal = document.getElementById('star-close');
+const starModal = document.getElementById('star-modal');
+
+closeStarModal.onclick = () => {
+  document.getElementById('star-change-step').innerHTML = '';
+  starModal.style.display = 'none';
+};
+
 document.addEventListener('DOMContentLoaded', () => {
   showBooks();
+  starRating();
 });
