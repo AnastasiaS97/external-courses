@@ -191,6 +191,35 @@ closeStarModal.onclick = () => {
   starModal.style.display = 'none';
 };
 
+const mostPopular = () => {
+  const booksToFilter = document.getElementsByClassName('content-book');
+  console.log(booksToFilter);
+  for (let index = 0; index < booksToFilter.length; index += 1) {
+    if (books[index].rating !== 5) {
+      booksToFilter[index].style.display = 'none';
+    }
+  }
+};
+
+const mostPopularBtn = document.getElementById('filter-most-popular');
+
+mostPopularBtn.onclick = () => {
+  mostPopular();
+};
+
+const allBooks = () => {
+  const booksToFilter = document.getElementsByClassName('content-book');
+  for (let index = 0; index < booksToFilter.length; index += 1) {
+    booksToFilter[index].style.display = '';
+  }
+};
+
+const allBooksBtn = document.getElementById('filter-all-books');
+
+allBooksBtn.onclick = () => {
+  allBooks();
+};
+
 document.addEventListener('DOMContentLoaded', () => {
   showBooks();
   starRating();
