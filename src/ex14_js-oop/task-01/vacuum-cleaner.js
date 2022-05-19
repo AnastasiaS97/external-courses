@@ -19,7 +19,7 @@ class VacuumCleaner {
 
       return 0;
     }
-    this.cleaningMode = 'wet';
+    this.mode = 'wet';
     console.log('The device is now switched to wet cleaning mode');
 
     return 0;

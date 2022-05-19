@@ -4,7 +4,7 @@ class device {
     this.turnedOn = model.turnedOn;
   }
 
-  powerInfo() {
+  showInfo() {
     console.log(`Power: ${this.power}`);
   }
 
@@ -26,7 +26,7 @@ class device {
 
       return 0;
     }
-    this.state = false;
+    this.turnedOn = false;
     console.log('Turned off');
 
     return 0;

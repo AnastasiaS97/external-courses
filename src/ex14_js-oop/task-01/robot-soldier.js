@@ -22,7 +22,7 @@ class RobotSoldier {
 
       return 0;
     }
-    this.shootingStatus = 'is shooting';
+    this.shootStatus = 'is shooting';
     console.log('The robot soldier is now shooting');
 
     return 0;
