@@ -128,14 +128,14 @@ class Room {
 const LGTV = new TV(2000, 'LG TV', 5);
 const SamsungMicrowave = new Microwave(1200, 'Samsung microwave', 60);
 const BoschOven = new Oven(500, 'Bosch oven', 120, 400);
-const kitchen = new Room([LGTV, SamsungMicrowave, BoschOven], 'kitchen');
+const Kitchen = new Room([LGTV, SamsungMicrowave, BoschOven], 'kitchen');
 
 const SamsungTV = new TV(2600, 'Samsung TV', 3);
-const bedroom = new Room([SamsungTV], 'bedroom');
+const Bedroom = new Room([SamsungTV], 'bedroom');
 
 LGTV.turnOn();
 BoschOven.turnOn();
-kitchen.getRoomPower();
-kitchen.findDevice('LG TV');
+Kitchen.getRoomPower();
+Kitchen.findDevice('LG TV');
 SamsungTV.turnOn();
-bedroom.findDevice('Samsung TV');
+Bedroom.findDevice('Samsung TV');
