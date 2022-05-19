@@ -1,8 +1,8 @@
-const device = require('./device.js');
+const Device = require('./device.js');
 
 class VacuumCleaner {
   constructor(model) {
-    device.call(this, model);
+    Device.call(this, model);
 
     this.mode = model.mode;
   }
@@ -30,6 +30,6 @@ class VacuumCleaner {
   }
 }
 
-VacuumCleaner.prototype = { ...device.prototype };
+VacuumCleaner.prototype = { ...Device.prototype };
 
 module.exports = VacuumCleaner;

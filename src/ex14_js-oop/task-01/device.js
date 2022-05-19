@@ -1,4 +1,4 @@
-class device {
+class Device {
   constructor(model) {
     this.power = model.power;
     this.turnedOn = model.turnedOn;
@@ -33,4 +33,4 @@ class device {
   }
 }
 
-module.exports = device;
+module.exports = Device;

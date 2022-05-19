@@ -1,8 +1,8 @@
-const device = require('./device.js');
+const Device = require('./device.js');
 
 class RobotSoldier {
   constructor(model) {
-    device.call(this, model);
+    Device.call(this, model);
     this.shootStatus = model.shootStatus;
     this.mapStatus = model.mapStatus;
   }
@@ -69,6 +69,6 @@ class RobotSoldier {
   }
 }
 
-RobotSoldier.prototype = { ...device.prototype };
+RobotSoldier.prototype = { ...Device.prototype };
 
 module.exports = RobotSoldier;
