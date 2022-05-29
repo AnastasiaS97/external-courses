@@ -1,0 +1,76 @@
+header {
+  width: 100%;
+  height: 45px;
+  grid-column: 1 / 3;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  display: grid;
+  grid-template-columns: 7fr 1fr;
+  background-color: #2f364a;
+}
+
+.header-nav-wrp {
+  margin-right: 0;
+}
+
+.header-nav {
+  width: 173px;
+  height: 45px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+}
+
+.header-link {
+  font-family: proximanova-regular;
+  text-decoration: none;
+  color: #78829d;
+  font-size: 13px;
+}
+
+.header-link:hover {
+  color: #ffffff;
+}
+
+.list-decoration {
+  margin: 0 10px;
+}
+
+.header-profile {
+  width: 139px;
+  height: 45px;
+  margin-right: 0;
+  padding: 0 10px;
+  background-color: #15a4fa;
+  border-top-right-radius: 7px;
+  font-family: proximanova-regular;
+  font-size: 13px;
+  color: #ffffff;
+  cursor: default;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.profile-avatar {
+  width: 29px;
+  height: 29px;
+  margin-left: 2px;
+  margin-right: 0;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+}
+
+.profile-name {
+  margin-right: 5px;
+}
+
+.profile-menu {
+  cursor: pointer;
+  color: white;
+}

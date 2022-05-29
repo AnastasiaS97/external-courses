@@ -1,0 +1,30 @@
+footer {
+  width: 100%;
+  height: 45px;
+  grid-column: 1 / 3;
+  background-color: #181e2c;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: grid;
+  grid-template-columns: 13fr 1fr;
+}
+
+.footer-help,
+.footer-settings {
+  width: 55px;
+  height: 45px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.footer-help {
+  background-color: #1f2638;
+  grid-column: 10 / span 1;
+}
+
+.footer-settings {
+  background-color: #16a4fa;
+  border-bottom-right-radius: 5px;
+  grid-column: 12 / span 1;
+}

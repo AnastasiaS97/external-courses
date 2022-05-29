@@ -1,0 +1,127 @@
+nav {
+  height: 100%;
+  margin: 0;
+  background-color: #1f2637;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-divider {
+  width: 100%;
+  height: 5px;
+  background-color: rgba(24, 30, 44, 0.8);
+  border: none;
+  box-shadow: rgba(2, 2, 2, 0.2) 0px 1px 0 inset,
+    rgba(255, 255, 255, 0.05) 0px -1px 0 inset;
+}
+
+.nav-add-book {
+  width: 100%;
+  height: 110px;
+  margin: 0 0 5px 0;
+  background-color: #1f2637;
+  z-index: 99;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-add-btn {
+  width: 161px;
+  height: 45px;
+  background-color: #f2795a;
+  color: #ffffff;
+  font-family: proximanova-regular;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav-add-btn:hover {
+  background-color: #15a4fa;
+}
+
+.fa-plus {
+  margin-right: 0;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.add-btn-text {
+  margin-left: 20px;
+}
+
+.nav-features {
+  width: 100%;
+  height: 237px;
+  margin: 0 0 5px 0;
+  background-color: #1f2637;
+  z-index: 10;
+}
+
+.nav-features-list {
+  padding-left: 0;
+  margin: 10px 20px;
+}
+
+.nav-feature-name {
+  margin-bottom: 18px;
+}
+
+.feature-link {
+  text-decoration: none;
+  font-family: proximanova-regular;
+  font-size: 13px;
+  color: #78829d;
+  margin-left: 10px;
+}
+
+.nav-filters {
+  width: 100%;
+  height: 173px;
+  margin: 0 0 5px 0;
+  background-color: #1f2637;
+}
+
+.nav-filters-list {
+  padding-left: 0;
+  margin: 22px 25px;
+}
+
+.nav-filter-name {
+  margin-bottom: 21px;
+}
+
+.filter-link {
+  text-decoration: none;
+  font-family: proximanova-regular;
+  font-size: 13px;
+  color: #78829d;
+  margin-left: 12px;
+}
+
+.nav-log {
+  width: 100%;
+  height: 350px;
+  margin: 0;
+  background-color: #1f2637;
+  overflow-y: scroll;
+}
+
+.log-list {
+  height: 350px;
+  margin-left: 0;
+  padding: 10px 20px;
+  color: #78829d;
+}
+
+.log-entry {
+  font-family: proximanova-regular;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
